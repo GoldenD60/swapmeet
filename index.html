@@ -3,7 +3,12 @@
     <title>Swap Meet</title>
     <script>
       window.onload = () => {
-        window.location.replace("unitydl://swapmeet" + window.location.search);
+        try {
+          window.location.replace("unitydl://swapmeet" + window.location.search);
+        }
+        catch(err) {
+          window.location.replace("https://play.google.com/store/apps/details?id=com.GoldenD60.swapmeet" + window.location.search);
+        }
       }
     </script>
   </head>
