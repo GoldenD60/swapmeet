@@ -1,6 +1,10 @@
 <html>
   <head>
     <title>Swap Meet</title>
-    <meta http-equiv="Refresh" content="0; url='unitydl://swapmeet?0HKPOV'" />
+    <script>
+      window.onload = () => {
+        window.location.replace("unitydl://swapmeet" + window.location.search);
+      }
+    </script>
   </head>
 </html>
